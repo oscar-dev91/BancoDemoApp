@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="depositar.css">
+    <title>Realizar Depósito | BancoDemoApp</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo"><a href="./index.html">BancoDemoApp</a></div>
+        <nav>
+            <a href="./index.html">Dashboard</a>
+            <a href="./depositar.html" class="active">Depositar</a>
+            <a href="./retirar.html">Retirar</a>
+            <a href="./logs.html">Logs</a>
+            <a href="../index.html" class="logout">Cerrar Sesión</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="deposit-section">
+            <h1>Realizar Depósito</h1>
+            <p class="subtitle">Depósito a cuenta de cliente</p>
+            <div class="deposit-form">
+                <div class="account-details">
+                    <div class="form-group">
+                        <label for="accountNumber">Cuenta de Destino</label>
+                        <div class="input-with-icon">
+                            <input type="number" id="accountNumber" placeholder="1234567890">
+                            <button class="search-button">🔍︎</button>
+                        </div>
+                    </div>
+                    <div class="grid-info">
+                        <div class="info-item">
+                            <label>Titular</label>
+                            <span>Cliente Demo</span>
+                        </div>
+                        <div class="info-item">
+                            <label>Tipo de Cuenta</label>
+                            <span>Ahorros</span>
+                        </div>
+                        <div class="info-item">
+                            <label>Saldo Actual</label>
+                            <span>$ 150,000.00</span>
+                        </div>
+                        <div class="info-item">
+                            <label>Estatus</label>
+                            <span class="status active">Activa</span>
+                        </div>
+                    </div>
+                    <button class="change-account-button">Cambiar cuenta</button>
+                </div>
+
+                <div class="deposit-amount">
+                    <div class="form-group">
+                        <label for="depositAmount">Monto a Depositar</label>
+                        <div class="input-prefix">
+                            <span class="prefix">$</span>
+                            <input type="number" id="depositAmount" value="0.00">
+                        </div>
+                    </div>
+                    <button class="deposit-button primary">Realizar Depósito</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="instructions-section">
+            <h3>Instrucciones</h3>
+            <ol>
+                <li>Ingrese el número de cuenta del cliente</li>
+                <li>Verifique los datos de la cuenta</li>
+                <li>Ingrese el monto a depositar</li>
+                <li>Confirme la operación</li>
+            </ol>
+        </section>
+
+        <section class="important-info-section">
+            <h3>Información importante</h3>
+            <ol>
+                <li>Verifique que el cliente ha entregado el dinero antes de completar la operación.</li>
+                <li>El dinero estará disponible en la cuenta del cliente inmediatamente.</li>
+                <li>Entregue el comprobante de depósito al cliente.</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h4>BancoDemoApp</h4>
+                <p>Aplicación de demostración para gestión bancaria con funcionalidades para clientes y operadores.</p>
+            </div>
+            <div>
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Iniciar Sesión</a></li>
+                    <li><a href="#">Registrarse</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Términos de Servicio</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2025 BancoDemoApp. Todos los derechos reservados
+        </div>
+    </footer>
+
+    <script src="./depositar.js"></script>
+</body>
+</html>

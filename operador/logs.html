@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="logs.css">
+    <title>Logs | BancoDemoApp</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo"><a href="./index.html">BancoDemoApp</a></div>
+        <nav>
+            <a href="./index.html">Dashboard</a>
+            <a href="./depositar.html">Depositar</a>
+            <a href="./retirar.html">Retirar</a>
+            <a href="./logs.html" class="active">Logs</a>
+            <a href="../index.html" class="logout">Cerrar Sesión</a>
+        </nav>
+    </header>
+
+    <main class="container logs-page">
+        <h1>Historial de Actividades</h1>
+
+        <div class="filter-bar">
+            <div class="search-input">
+                <input type="text" placeholder="Buscar en logs...">
+            </div>
+            <div class="action-filter">
+                <select>
+                    <option>Todas las acciones</option>
+                    <option>Inicio de sesión</option>
+                    <option>Cierre de sesión</option>
+                    <option>Depósito procesado</option>
+                    <option>Retiro Procesado</option>
+                </select>
+            </div>
+            <button class="clear-filters-button">Limpiar Filtros</button>
+        </div>
+
+        <ul class="log-list">
+            <li class="log-item">
+                <span class="log-icon">🚪</span>
+                <div class="log-details">
+                    <span class="log-activity">Cierre de sesión</span>
+                    <span class="log-description">Cierre de sesión del sistema</span>
+                </div>
+                <div class="log-timestamp">
+                    <span class="log-date">24 de marzo de 2025</span>
+                    <span class="log-time">11:49 a.m.</span>
+                </div>
+            </li>
+            <li class="log-item">
+                <span class="log-icon">⬆️</span>
+                <div class="log-details">
+                    <span class="log-activity">Retiro Procesado</span>
+                    <span class="log-description">Retiro de $ 750,000.00 COP de cuenta # 12398-65487</span>
+                </div>
+                <div class="log-timestamp">
+                    <span class="log-date">24 de marzo de 2025</span>
+                    <span class="log-time">10:58 a.m.</span>
+                </div>
+            </li>
+            <li class="log-item">
+                <span class="log-icon">🔑</span>
+                <div class="log-details">
+                    <span class="log-activity">Inicio de sesión</span>
+                    <span class="log-description">Inicio de sesión desde sucursal central</span>
+                </div>
+                <div class="log-timestamp">
+                    <span class="log-date">24 de marzo de 2025</span>
+                    <span class="log-time">8:02 a.m.</span>
+                </div>
+            </li>
+            <li class="log-item">
+                <span class="log-icon">🚪</span>
+                <div class="log-details">
+                    <span class="log-activity">Cierre de sesión</span>
+                    <span class="log-description">Cierre de sesión del sistema</span>
+                </div>
+                <div class="log-timestamp">
+                    <span class="log-date">23 de marzo de 2025</span>
+                    <span class="log-time">11:49 a.m.</span>
+                </div>
+            </li>
+            <li class="log-item">
+                <span class="log-icon">⬇️</span>
+                <div class="log-details">
+                    <span class="log-activity">Depósito procesado</span>
+                    <span class="log-description">Deposito de $ 1,500,000.00 COP de cuenta # 98543-65901</span>
+                </div>
+                <div class="log-timestamp">
+                    <span class="log-date">23 de marzo de 2025</span>
+                    <span class="log-time">11:11 a.m.</span>
+                </div>
+            </li>
+            <li class="log-item">
+                <span class="log-icon">🔑</span>
+                <div class="log-details">
+                    <span class="log-activity">Inicio de sesión</span>
+                    <span class="log-description">Inicio de sesión desde sucursal central</span>
+                </div>
+                <div class="log-timestamp">
+                    <span class="log-date">23 de marzo de 2025</span>
+                    <span class="log-time">8:00 a.m.</span>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h4>BancoDemoApp</h4>
+                <p>Aplicación de demostración para gestión bancaria con funcionalidades para clientes y operadores.</p>
+            </div>
+            <div>
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Iniciar Sesión</a></li>
+                    <li><a href="#">Registrarse</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Términos de Servicio</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2025 BancoDemoApp. Todos los derechos reservados
+        </div>
+    </footer>
+
+    <script src="./logs.js"></script>
+</body>
+</html>

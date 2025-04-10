@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Bienvenido Usuario | BancoDemoApp</title>
+</head>
+<body>
+  <header>
+    <h1 class="logo"><a href="./index.html">BancoDemoApp</a></h1>
+    <nav>
+      <a href="./index.html">Dashboard</a>
+      <a href="./deposito.html">Depositar</a>
+      <a href="./retiro.html">Retirar</a>
+      <a href="./transferir.html">Transferir</a>
+      <a href="./historial.html">Transacciones</a>
+      <a href="../index.html" class="logout">Cerrar Sesión</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="welcome">
+      <h2>Dashboard del cliente</h2>
+      <p>Bienvenido, Cliente Demo</p>
+    </section>
+
+    <section class="account-info">
+      <div class="card">
+        <p>Tu Cuenta Ahorros</p>
+        <h3>1234567890</h3>
+        <span class="status">Activa</span>
+        <p class="saldo-label">Saldo Disponible</p>
+        <h2 class="saldo">$150,000.00</h2>
+      </div>
+
+      <div class="card quick-actions">
+        <h4>Acciones Rápidas</h4>
+        <div class="actions">
+          <a href="./deposito.html">Depositar</a>
+          <a href="./retiro.html">Retirar</a>
+          <a href="./transferir.html">Transferir</a>
+          <a href="./historial.html">Historial</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="transactions">
+      <div class="section-header">
+        <h3>Transacciones Recientes</h3>
+        <a href="./historial.html">Ver todas</a>
+      </div>
+
+      <div class="transaction-card">
+        <div class="icon success" aria-hidden="true">✔</div>
+        <div class="info">
+          <strong>Depósito</strong>
+          <p>23 marzo 2025, 10:30 a.m.</p>
+        </div>
+        <div class="amount success">+ $50,000.00</div>
+        <span class="status-label">Completada</span>
+      </div>
+
+      <div class="transaction-card">
+        <div class="icon danger" aria-hidden="true">➖</div>
+        <div class="info">
+          <strong>Retiro</strong>
+          <p>20 marzo 2025, 2:45 p.m.</p>
+        </div>
+        <div class="amount danger">- $15,000.00</div>
+        <span class="status-label">Completada</span>
+      </div>
+
+      <div class="transaction-card">
+        <div class="icon neutral" aria-hidden="true">🔁</div>
+        <div class="info">
+          <strong>Transferencia</strong>
+          <p>20 marzo 2025, 9:22 a.m.</p>
+        </div>
+        <div class="amount neutral">$70,000.00</div>
+        <span class="status-label">Completada</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-section">
+      <strong>BancoDemoApp</strong>
+      <p>Aplicación de demostración para gestión bancaria con funcionalidades para clientes y operadores.</p>
+    </div>
+    <div class="footer-section">
+      <h4>ENLACES RÁPIDOS</h4>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Iniciar Sesión</a></li>
+        <li><a href="#">Registrarse</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>LEGAL</h4>
+      <ul>
+        <li><a href="#">Términos de Servicio</a></li>
+        <li><a href="#">Política de Privacidad</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

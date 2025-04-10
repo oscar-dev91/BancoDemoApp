@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="retirar.css">
+    <title>Realizar Retiro | BancoDemoApp</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo"><a href="./index.html">BancoDemoApp</a></div>
+        <nav>
+            <a href="./index.html">Dashboard</a>
+            <a href="./depositar.html">Depositar</a>
+            <a href="./retirar.html" class="active">Retirar</a>
+            <a href="./logs.html">Logs</a>
+            <a href="../index.html" class="logout">Cerrar Sesión</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="withdraw-section">
+            <h1>Realizar Retiro</h1>
+            <p class="subtitle">Retiro de cuenta de cliente</p>
+            <div class="withdraw-form">
+                <div class="account-details">
+                    <div class="form-group">
+                        <label for="accountNumber">Cuenta de Destino</label>
+                        <div class="input-with-icon">
+                            <input type="text" id="accountNumber" value="1234567890" readonly>
+                            <button class="search-button">Q</button>
+                        </div>
+                    </div>
+                    <div class="grid-info">
+                        <div class="info-item">
+                            <label>Titular</label>
+                            <span>Cliente Demo</span>
+                        </div>
+                        <div class="info-item">
+                            <label>Tipo de Cuenta</label>
+                            <span>Ahorros</span>
+                        </div>
+                        <div class="info-item">
+                            <label>Saldo Actual</label>
+                            <span>$ 150,000.00</span>
+                        </div>
+                        <div class="info-item">
+                            <label>Estatus</label>
+                            <span class="status active">Activa</span>
+                        </div>
+                    </div>
+                    <button class="change-account-button">Cambiar cuenta</button>
+                </div>
+
+                <div class="withdraw-amount">
+                    <div class="form-group">
+                        <label for="withdrawAmount">Monto a Retirar</label>
+                        <div class="input-prefix">
+                            <span class="prefix">$</span>
+                            <input type="number" id="withdrawAmount" value="0.00">
+                        </div>
+                    </div>
+                    <button class="withdraw-button primary">Realizar Retiro</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="instructions-section">
+            <h3>Instrucciones</h3>
+            <ol>
+                <li>Ingrese el número de cuenta del cliente</li>
+                <li>Verifique los datos de la cuenta y el saldo disponible</li>
+                <li>Ingrese el monto a retirar (no puede exceder el saldo disponible)</li>
+                <li>Confirme la operación</li>
+                <li>Entregue el dinero al cliente</li>
+            </ol>
+        </section>
+
+        <section class="important-info-section">
+            <h3>Información importante</h3>
+            <ol>
+                <li>Verifique la identidad del cliente antes de procesar el retiro.</li>
+                <li>El saldo de la cuenta se actualizará inmediatamente después del retiro.</li>
+                <li>Entregue el comprobante de retiro al cliente junto con el dinero.</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h4>BancoDemoApp</h4>
+                <p>Aplicación de demostración para gestión bancaria con funcionalidades para clientes y operadores.</p>
+            </div>
+            <div>
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Iniciar Sesión</a></li>
+                    <li><a href="#">Registrarse</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Términos de Servicio</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2025 BancoDemoApp. Todos los derechos reservados
+        </div>
+    </footer>
+
+    <script src="./retirar.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Bienvenido Operador | BancoDemoApp</title>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo"><a href="./index.html">BancoDemoApp</a></div>
+    <nav>
+      <a href="./index.html" class="active">Dashboard</a>
+      <a href="./depositar.html">Depositar</a>
+      <a href="./retirar.html">Retirar</a>
+      <a href="./logs.html">Logs</a>
+      <a href="../index.html" class="logout">Cerrar Sesión</a>
+    </nav>
+  </header>
+
+  <main class="dashboard">
+    <section class="bienvenida">
+      <h1>Dashboard del Operador</h1>
+      <p>Bienvenido, Operador Demo</p>
+    </section>
+
+    <section class="resumen">
+      <div class="card resumen-item">
+        <div class="icon">📄</div>
+        <div>
+          <h3>Total Transacciones</h3>
+          <p>7</p>
+        </div>
+      </div>
+      <div class="card resumen-item">
+        <div class="icon">⬇️</div>
+        <div>
+          <h3>Depósitos Realizados</h3>
+          <p>2</p>
+        </div>
+      </div>
+      <div class="card resumen-item">
+        <div class="icon">⬆️</div>
+        <div>
+          <h3>Retiros Realizados</h3>
+          <p>2</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="acciones">
+        <div class="accion-card deposito">
+          <h3>Depósito</h3>
+          <p>Realizar un depósito a cuenta de cliente</p>
+          <button onclick="window.location.href='./depositar.html'">Realizar Depósito ➜</button>
+        </div>
+        <div class="accion-card retiro">
+          <h3>Retiro</h3>
+          <p>Procesar un retiro de cuenta de cliente</p>
+          <button onclick="window.location.href='./retirar.html'">Realizar Retiro ➜</button>
+        </div>
+      </section>
+
+    <section class="transacciones">
+      <div class="trans-header">
+        <h2>Transacciones Recientes</h2>
+        <a href="#">Ver todas</a>
+      </div>
+
+      <ul class="lista-transacciones">
+        <li class="trans-item">
+          <div class="tipo">✅ Depósito</div>
+          <div class="fecha">23 marzo 2025, 10:30 a.m.</div>
+          <div class="monto verde">+ $50,000.00</div>
+        </li>
+        <li class="trans-item">
+          <div class="tipo">⬆️ Retiro</div>
+          <div class="fecha">20 marzo 2025, 2:45 p.m.</div>
+          <div class="monto rojo">- $15,000.00</div>
+        </li>
+        <li class="trans-item">
+          <div class="tipo">📤 Transferencia</div>
+          <div class="fecha">20 marzo 2025, 9:22 a.m.</div>
+          <div class="monto azul">$70,000.00</div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div>
+        <h4>BancoDemoApp</h4>
+        <p>Aplicación de demostración para gestión bancaria con funcionalidades para clientes y operadores.</p>
+      </div>
+      <div>
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Iniciar Sesión</a></li>
+          <li><a href="#">Registrarse</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Términos de Servicio</a></li>
+          <li><a href="#">Política de Privacidad</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      © 2025 BancoDemoApp. Todos los derechos reservados
+    </div>
+  </footer>
+
+</body>
+</html>

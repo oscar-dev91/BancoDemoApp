@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Bienvenido Usuario | BancoDemoApp</title>
+</head>
+<body>
+  <header>
+    <h1 class="logo"><a href="./index.html">BancoDemoApp</a></h1>
+    <nav>
+      <a href="./index.html">Dashboard</a>
+      <a href="./deposito.html">Depositar</a>
+      <a href="./retiro.html">Retirar</a>
+      <a href="./transferir.html">Transferir</a>
+      <a href="./historial.html">Transacciones</a>
+      <a href="../index.html" class="logout">Cerrar Sesión</a>
+    </nav>
+  </header>
+
+  <main class="contenido">
+    <h2>Historial de Transacciones</h2>
+    <p class="subtitulo">Visualiza tu historial completo de movimientos</p>
+
+    <section class="tabla-contenedor">
+      <div class="buscador">
+        <input type="text" placeholder="🔍 Buscar transacciones..." />
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Tipo</th>
+            <th>Fecha</th>
+            <th>Monto</th>
+            <th>Estado</th>
+            <th>Detalles</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#4</td>
+            <td>Transferencia</td>
+            <td>23 mar 2025, 4:02 p.m.</td>
+            <td class="monto azul">$15,000.00</td>
+            <td><span class="estado pendiente">Pendiente</span></td>
+            <td>Cuenta: 7853219067</td>
+          </tr>
+          <tr>
+            <td>#3</td>
+            <td>Retiro</td>
+            <td>20 mar 2025, 10:10 a.m.</td>
+            <td class="monto rojo">$70,000.00</td>
+            <td><span class="estado cancelada">Cancelada</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>#2</td>
+            <td>Transferencia</td>
+            <td>10 mar 2025, 9:52 a.m.</td>
+            <td class="monto azul">$10,000.00</td>
+            <td><span class="estado pendiente">Pendiente</span></td>
+            <td>Cuenta: 0987654321</td>
+          </tr>
+          <tr>
+            <td>#1</td>
+            <td>Deposito</td>
+            <td>10 mar 2025, 8:58 a.m.</td>
+            <td class="monto verde">$95,000.00</td>
+            <td><span class="estado completada">Completada</span></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-section">
+      <strong>BancoDemoApp</strong>
+      <p>Aplicación de demostración para gestión bancaria con funcionalidades para clientes y operadores.</p>
+    </div>
+    <div class="footer-section">
+      <h4>ENLACES RÁPIDOS</h4>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Iniciar Sesión</a></li>
+        <li><a href="#">Registrarse</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>LEGAL</h4>
+      <ul>
+        <li><a href="#">Términos de Servicio</a></li>
+        <li><a href="#">Política de Privacidad</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
