@@ -29,9 +29,9 @@ loginForm.addEventListener('submit', (e) => {
   const password = document.getElementById('password').value;
 
   if (userType === 'cliente' && email === 'cliente@demo.com' && password === 'password') {
-    window.location.href = '/cliente/index.html';
+    window.location.href = './cliente/index.html';
   } else if (userType === 'operador' && email === 'operador@demo.com' && password === 'password') {
-    window.location.href = '/operador/index.html';
+    window.location.href = './operador/index.html';
   } else {
     errorMessage.style.display = 'block';
   }
