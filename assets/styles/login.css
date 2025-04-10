@@ -29,16 +29,17 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2rem 1rem;
 }
 
 .login-container {
-    width: 30%;
+    width: 90%;
+    max-width: 500px;
     background: white;
-    padding: 50px;
+    padding: 2.5rem;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin: 3rem auto;
 }
 
 /* Estilo del título */
@@ -53,6 +54,8 @@ a:hover {
 .role-selection {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
     margin-bottom: 20px;
 }
 
@@ -71,23 +74,22 @@ a:hover {
     font-size: 1rem;
     cursor: pointer;
     background-color: transparent;
-    color: rgb(75, 85, 99); /* text-gray-600 */
-    border: 2px solid rgb(229, 231, 235); /* border-gray-200 */
+    color: rgb(75, 85, 99);
+    border: 2px solid rgb(229, 231, 235);
     width: 47%;
     height: 90px;
-  }
-  .toggle-button svg {
-    width: 50px;height: 50px;
-  }
-  
-  /* Estilo para el botón activo */
-  .toggle-button.active {
-    background-color: rgb(240, 249, 255); /* bg-bank-50 */
-    color: rgb(3, 105, 161); /* text-bank-700 */
-    border-color: rgb(2, 132, 199); /* border-bank-600 */
-  }
+}
+.toggle-button svg {
+    width: 50px;
+    height: 50px;
+}
 
-
+/* Estilo para el botón activo */
+.toggle-button.active {
+    background-color: rgb(240, 249, 255);
+    color: rgb(3, 105, 161);
+    border-color: rgb(2, 132, 199);
+}
 
 /* Campos de entrada */
 .input-group {
@@ -143,10 +145,57 @@ a:hover {
 .register-link a:hover {
     text-decoration: underline;
 }
+
 .error-message {
-    display: none; /* Oculto por defecto */
+    display: none;
     color: red;
     margin-top: 10px;
     font-size: 14px;
     text-align: center;
-  }
+}
+
+/* MEDIA QUERIES PARA RESPONSIVE DESIGN */
+
+@media screen and (max-width: 768px) {
+    .login-container {
+        width: 90%;
+        padding: 2rem;
+    }
+
+    .toggle-button {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .role-selection {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .input-group input {
+        font-size: 14px;
+    }
+
+    #login-btn {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .toggle-button svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .input-group label {
+        font-size: 14px;
+    }
+
+    .register-link {
+        font-size: 12px;
+    }
+}

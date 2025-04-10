@@ -602,61 +602,98 @@ input[type="number"] {
     font-size: 0.85rem;
 }
 
-/* Media queries para hacerlo más responsivo */
+/* RESPONSIVE DESIGN */
 @media (max-width: 992px) {
-    .deposit-form {
-        grid-template-columns: 1fr;
-    }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
 
-    .withdraw-form {
-        grid-template-columns: 1fr;
-    }
+  .navbar nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .resumen, .acciones {
+    flex-direction: column;
+  }
+
+  .deposit-form,
+  .withdraw-form {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 }
 
 @media (max-width: 768px) {
-    .container {
-        padding: 1.5rem;
-        margin: 1rem auto;
-    }
+  .logo a {
+    font-size: 1.3rem;
+  }
 
-    .navbar {
-        padding: 1rem;
-    }
+  .dashboard {
+    padding: 1rem;
+  }
 
-    .navbar nav a {
-        margin-left: 1rem;
-        font-size: 0.9rem;
-    }
+  .card,
+  .accion-card {
+    min-width: 100%;
+  }
 
-    .footer-content {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .trans-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
 
-    .footer-content > div {
-        margin-bottom: 1.5rem;
-    }
+  .trans-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
 
-    .filter-bar {
-        flex-direction: column;
-        align-items: stretch;
-    }
+  .trans-item .monto {
+    text-align: left;
+  }
 
-    .action-filter {
-        width: 100%;
-    }
+  .container {
+    padding: 1rem;
+  }
 
-    .log-item {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .grid-info {
+    grid-template-columns: 1fr;
+  }
+}
 
-    .log-icon {
-        margin-bottom: 0.5rem;
-    }
+@media (max-width: 576px) {
+  .primary,
+  .withdraw-button,
+  .accion-card button {
+    width: 100%;
+    text-align: center;
+  }
 
-    .log-timestamp {
-        text-align: left;
-        margin-top: 0.5rem;
-    }
+  .input-prefix {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .input-prefix span {
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .input-prefix input[type="number"] {
+    padding: 0.5rem;
+  }
+
+  .search-button {
+    font-size: 1rem;
+  }
 }

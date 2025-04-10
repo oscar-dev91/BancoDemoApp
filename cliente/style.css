@@ -614,22 +614,114 @@ header, footer {
     color: green;
   }
   
-  /* Agregamos media query básica */
-  @media (max-width: 768px) {
-    .account-info {
-      flex-direction: column;
-    }
-  
-    nav a {
-      margin-left: 10px;
-      font-size: 14px;
-    }
-  
-    footer {
-      flex-direction: column;
-    }
-  
-    .footer-section {
-      margin-bottom: 20px;
-    }
+  /* RESPONSIVE DESIGN */
+
+/* Teléfonos (pantallas pequeñas) */
+@media (max-width: 767px) {
+  header, footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
   }
+
+  nav a {
+    margin-left: 0;
+    margin-top: 10px;
+    display: block;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .account-info {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .quick-actions .actions {
+    flex-direction: column;
+  }
+
+  .transaction-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .amount {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-top: 10px;
+  }
+
+  .status-label {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin-top: 5px;
+  }
+
+  .transferencia-container,
+  .deposit-container,
+  .retirar-container {
+    flex-direction: column;
+  }
+
+  .summary-card,
+  .form-card {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    width: 100%;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  header, footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px 30px;
+  }
+
+  nav a {
+    margin-left: 15px;
+  }
+
+  main {
+    padding: 25px 30px;
+  }
+
+  .transferencia-container,
+  .deposit-container,
+  .retirar-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form-card,
+  .summary-card {
+    width: 100%;
+  }
+
+  .form-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .footer-section {
+    flex: 1 1 45%;
+    margin-bottom: 15px;
+  }
+}
