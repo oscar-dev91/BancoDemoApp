@@ -114,6 +114,10 @@ a:hover {
     padding: 10px;
 }
 
+.input-group .credenciales {
+    font-size: 0.7rem;
+}
+
 /* Botón de inicio de sesión */
 #login-btn {
     width: 100%;
